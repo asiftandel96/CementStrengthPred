@@ -43,7 +43,7 @@ def predictRouteClient():
 
             pred_val = pred_validation(path) #object initialization
 
-            pred_val.prediction_validation() #calling the prediction_validation function
+            #pred_val.prediction_validation() #calling the prediction_validation function
 
             pred = prediction(path) #object initialization
 
@@ -95,4 +95,4 @@ if __name__ == "__main__":
     #httpd = simple_server.make_server( host,port, app)
     #print("Serving on %s %d" % ( host,port))
     #httpd.serve_forever()
-    app.run(port=8080,debug=True)
+    app.run()
