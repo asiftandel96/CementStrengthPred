@@ -1,4 +1,4 @@
-                                                       Cement Strength Prediction
+                                                          Cement Strength Prediction
                                                        
   Project Link:- https://cementstrengthpred.herokuapp.com/
    
@@ -148,6 +148,14 @@ This is the predictionFromModel.py file where the predictions take place based o
 ![image](https://user-images.githubusercontent.com/61505882/129224923-43222506-9a7a-4299-a3c6-edce8396308d.png)
 
 manifest.yml:- This file contains the instance configuration, app name, and build pack language.
+
+![CementProc](https://user-images.githubusercontent.com/61505882/129226907-c3b31da6-7287-4e5a-b577-1cc86d209072.JPG)
+
+Procfile :- It contains the entry point of the app.
+
+![runtime](https://user-images.githubusercontent.com/61505882/129228524-6542f2d3-d14d-4655-ac16-e2edfde9150a.jpg)
+
+runtime.txt:- It contains the Python version number.
 
                                                       
 
