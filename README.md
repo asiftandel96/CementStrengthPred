@@ -27,8 +27,12 @@ Cement (component 1) | quantitative | kg in a m3 mixture |
 Blast Furnace  | quantitative | kg in a m3 |  Blast furnace
 Slag (component 2) |          | mixture | slag is a nonmetallic coproduct produced in the process. It consists primarily of silicates, aluminosilicates, and calcium-alumina-                                                 silicates
 Fly Ash (component 3) | quantitative | kg in a m3 mixture | It is a coal combustion product that is composed of the particulates (fine particles of burned fuel) that are driven                                                                out of coal-fired boilers together with the flue gases. 
-
-
+Water (component 4) | quantitative | kg in a m3 mixture |
+Superplasticizer (component 5) | quantitative | kg in a m3 mixture | Superplasticizers (SP's), also known as high range water reducers, are additives used in making high strength                                                                       concrete. Their addition to concrete or mortar allows the reduction of the water to cement ratio without                                                                           negatively affecting the workability of the mixture, and enables the production of self-consolidating                                                                               concrete and high performance concrete
+Coarse Aggregate (component 6) | quantitative | kg in a m3 mixture | construction aggregate, or simply "aggregate", is a broad category of coarse to medium grained particulate                                                                          material used in construction, including sand, gravel, crushed stone, slag, recycled concrete and geosynthetic                                                                      aggregates
+Fine Aggregate (component 7) | quantitative | kg in a m3 mixture | Similar to coarse aggregate, the constitution is much finer
+Age| quantitative| Day (1~365)| 
+Concrete compressive strength| quantitative | MPa | Output Variable
 
 
 
