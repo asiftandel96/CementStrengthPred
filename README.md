@@ -23,10 +23,12 @@ corresponds to the order of numerals along the rows of the database.
 
 Name | DataType | Measurement | Description
 ------------ | ------------- | ------------ | -------------  
-Cement (component 1) | quantitative | kg in a m3 mixture | Input Variable
+Cement (component 1) | quantitative | kg in a m3 mixture | 
 Blast Furnace  | quantitative | kg in a m3 |  Blast furnace
 Slag (component 2) |          | mixture | slag is a nonmetallic coproduct produced in the process. It consists primarily of silicates, aluminosilicates, and calcium-alumina-                                                 silicates
 Fly Ash (component 3) | quantitative | kg in a m3 mixture | It is a coal combustion product that is composed of the particulates (fine particles of burned fuel) that are driven                                                                out of coal-fired boilers together with the flue gases. 
+
+
 
 
 
