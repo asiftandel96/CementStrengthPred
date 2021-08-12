@@ -130,7 +130,24 @@ We will be deploying the model to the Heroku Platform.
 
 This is a workflow diagram for the prediction of using the trained model.   
 
+Now let’s see the Cement_Strength project folder structure.
 
+![image](https://user-images.githubusercontent.com/61505882/129224410-83fd8565-377b-4d6a-aec3-a6e2391da8bf.png)
+
+requirements.txt file consists of all the packages that you need to deploy the app in the cloud.
+
+![image](https://user-images.githubusercontent.com/61505882/129224490-44a6b2b5-c772-4020-87fd-18a49fa2bf5c.png)
+
+app.py is the entry point of our application, where the flask server starts. 
+
+
+![image](https://user-images.githubusercontent.com/61505882/129224721-8cd39135-fe59-4d97-8e93-c1efb35b2f64.png)
+
+This is the predictionFromModel.py file where the predictions take place based on the data we are giving input to the model.
+
+![image](https://user-images.githubusercontent.com/61505882/129224923-43222506-9a7a-4299-a3c6-edce8396308d.png)
+
+manifest.yml:- This file contains the instance configuration, app name, and build pack language.
 
                                                       
 
