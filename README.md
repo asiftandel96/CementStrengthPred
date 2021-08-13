@@ -1,6 +1,8 @@
-                                                          Cement Strength Prediction
+                                                    Cement Strength Prediction
                                                        
   Project Link:- https://cementstrengthpred.herokuapp.com/
+  
+  Project Demo:-
    
   ![PostmanCementfile](https://user-images.githubusercontent.com/61505882/129213514-d6412321-ff3c-4c82-9ce9-b35dd3985be8.gif)
 
@@ -21,6 +23,7 @@
   Given is the variable name, variable type, the measurement unit and a brief description. The concrete compressive strength is the regression problem. The order of this listing 
 corresponds to the order of numerals along the rows of the database. 
 
+
 Name | DataType | Measurement | Description
 ------------ | ------------- | ------------ | -------------  
 Cement (component 1) | quantitative | kg in a m3 mixture | 
@@ -37,6 +40,10 @@ Concrete compressive strength| quantitative | MPa | Output Variable
 
 Apart from training files, we also require a "schema" file from the client, which contains all the relevant information about the training files such as:
 Name of the files, Length of Date value in FileName, Length of Time value in FileName, Number of Columns, Name of the Columns, and their datatype.
+
+![SchemaT](https://user-images.githubusercontent.com/61505882/129382967-64c0726f-fe21-4444-8382-b18b27fbba2d.JPG)
+
+
  
 Data Validation:-
 
@@ -52,6 +59,7 @@ In this step, we perform different sets of validation on the given set of traini
 
 5.	Null values in columns - If any of the columns in a file have all the values as NULL or missing, we discard such a file and move it to "Bad_Data_Folder".
 
+![rawfilecement](https://user-images.githubusercontent.com/61505882/129383554-53453036-b00e-4345-8710-afbd3ceb922d.gif)
 
 
 Data Insertion in Database:-
@@ -61,7 +69,9 @@ Data Insertion in Database:-
 2) Table creation in the database - Table with name - "Good_Data", is created in the database for inserting the files in the "Good_Data_Folder" based on given column names and datatype in the schema file. If the table is already present, then the new table is not created and new files are inserted in the already present table as we want training to be done on new as well as old training files.     
 
 3) Insertion of files in the table - All the files in the "Good_Data_Folder" are inserted in the above-created table. If any file has invalid data type in any of the columns, the file is not loaded in the table and is moved to "Bad_Data_Folder".
- 
+
+ ![dbcement](https://user-images.githubusercontent.com/61505882/129383974-6fe9832c-d7ee-4ce3-8238-ab0d5080df8f.gif)
+
 Model Training:-
 
 1) Data Export from Db - The data in a stored database is exported as a CSV file to be used for model training.
@@ -74,10 +84,16 @@ Model Training:-
    
    c) Scale the training and test data separately.
    
+   
 3) Clustering - KMeans algorithm is used to create clusters in the preprocessed data. The optimum number of clusters is selected by plotting the elbow plot, and for the dynamic selection of the number of clusters, we are using "KneeLocator" function. The idea behind clustering is to implement different algorithms
    To train data in different clusters. The Kmeans model is trained over preprocessed data and the model is saved for further use in prediction.
    
 4) Model Selection - After clusters are created, we find the best model for each cluster. We are using two algorithms, "Random forest Regressor" and “Linear Regression”. For each cluster, both the algorithms are passed with the best parameters derived from GridSearch. We calculate the Rsquared scores for both models and select the model with the best score. Similarly, the model is selected for each cluster. All the models for every cluster are saved for use in prediction. 
+
+
+![trainmodel](https://user-images.githubusercontent.com/61505882/129384761-ad06dc99-b87b-4b85-8ab9-c6345a582e4d.gif)
+
+
  
 Prediction Data Description:-
  
