@@ -117,6 +117,9 @@ In this step, we perform different sets of validation on the given set of traini
 4) Datatype of columns - The datatype of columns is given in the schema file. This is validated when we insert the files into Database. If dataype is wrong then the file is moved to "Bad_Data_Folder". 
 
 5) Null values in columns - If any of the columns in a file has all the values as NULL or missing, we discard such file and move it to "Bad_Data_Folder".
+
+![rawpred](https://user-images.githubusercontent.com/61505882/129392534-ed4b6807-f156-4832-bdb8-8db505b20389.gif)
+
   
 Data Insertion in Database:-
 
@@ -125,6 +128,9 @@ Data Insertion in Database:-
   2) Table creation in the database - Table with name - "Good_Data", is created in the database for inserting the files in the "Good_Data_Folder" on the basis of given column         names and datatype in the schema file. If table is already present then new table is not created, and new files are inserted the already present table as we want training to      be  done on new as well old training files.     
   
   3) Insertion of files in the table - All the files in the "Good_Data_Folder" are inserted in the above-created table. If any file has invalid data type in any of the columns,      the file is not loaded in the table and is moved to "Bad_Data_Folder".
+
+
+![dbpred](https://user-images.githubusercontent.com/61505882/129392867-ce2ba3eb-e7c1-40f3-831b-452fffc4065e.gif)
 
 
 Prediction 
@@ -142,6 +148,14 @@ Prediction
 4) Prediction - Based on the cluster number, the respective model is loaded and is used to predict the data for that cluster.
 
 5) Once the prediction is made for all the clusters, the predictions along with the original names before label encoder are saved in a CSV file at a given location and the location is returned to the client.
+
+
+![predictmodel](https://user-images.githubusercontent.com/61505882/129393090-8ebb53c2-09f0-4f1f-bf26-9835b7d13865.gif)
+
+![PostManCementPredict](https://user-images.githubusercontent.com/61505882/129393406-e70b7f0c-8de7-4143-baa1-22db728d514d.JPG)
+
+
+
  
 Deployment:-
 
