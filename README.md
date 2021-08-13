@@ -101,6 +101,9 @@ Client will send the data in multiple set of files in batches at a given locatio
 Apart from prediction files, we also require a "schema" file from client which contains all the relevant information about the training files such as:
 Name of the files, Length of Date value in FileName, Length of Time value in FileName, Number of Columns, Name of the Columns and their datatype.
 
+![SchemaP](https://user-images.githubusercontent.com/61505882/129385302-ea1068b1-3e1d-45be-9f9e-96b056cd263d.JPG)
+
+
 Data Validation:-
 
 In this step, we perform different sets of validation on the given set of training files.
